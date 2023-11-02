@@ -1,14 +1,12 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=Spartan:wght@300;400;500&display=swap");
-
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: 'Spartan', sans-serif;
+  font-family: sans-serif;
 }
 
 body {
-  background: #F5FFFA;
+  background: #FFF;
 }
 
 a {
@@ -30,7 +28,7 @@ li {
 }
 
 .icon {
-  font-size: 2rem;
+  font-size: 1.3rem;
   cursor: pointer;
 }
 
@@ -44,14 +42,13 @@ li {
   align-items: center;
 }
 
-
 .none {
   display: none;
 }
 
 .btn {
-  padding-right: .7rem 1.5rem;
-  background: #00BFFF;
+  padding: .7rem 1.5rem;
+  background: rgba(0, 0, 253, 0.67);
   border: none;
   outline: none;
   border-radius: 3rem;
@@ -59,12 +56,12 @@ li {
   color: #FFF;
 
   a {
-    color: white;
+    color: #FFF;
     font-weight: 500;
   }
 
   &:hover {
-    background: #FFA07A;
+    background: red;
   }
 }
 
@@ -75,7 +72,7 @@ img, video {
 
 input {
   font-size: 100%;
-  color: #778899;
+  color: #DCDCDC;
 }
 
 p {
@@ -96,49 +93,49 @@ h2 {
   color: #000;
 }
 
-.navbar {
+.navBar {
   position: fixed;
   flex-direction: column;
   width: 100%;
   z-index: 1000;
 
-  .navBarOne, .navbarTwo {
+  .navBarOne, .navBarTwo {
     justify-content: space-between;
     padding: 1rem;
     width: 100%;
   }
 
   .navBarOne {
-    background: rgba(39, 117, 242, 0.71);
-  }
+    background: rgba(0, 0, 253, 0.67);
 
-  .icon:hover {
-    color: #FFF;
-  }
+    .icon:hover {
+      color: rgba(232, 253, 0, 0.9);
+    }
 
-  .atb {
-    gap: 1rem;
+    .atb {
+      gap: 1rem;
 
-    span {
-      color: #000;
-      font-size: 13px;
-      cursor: pointer;
+      span {
+        color: #000;
+        font-size: 13px;
+        cursor: pointer;
 
-      &:hover {
-        color: #FFF;
-        font-size: 700;
+        &:hover {
+          color: #FFF;
+          font-size: 700;
+        }
       }
     }
   }
 
-  .navbarTwo {
+  .navBarTwo {
     display: flex;
     align-items: center;
     justify-content: space-between;
     top: 3rem;
     padding: 1.5rem 1rem;
     position: fixed;
-    transition: .3s ease;
+    transition: .3s ease-in-out;
 
     .logoDiv {
       .logo {
@@ -146,55 +143,179 @@ h2 {
       }
     }
 
-    @media screen and (max-width: 768px){
-      .navbarMenu{
+    @media screen and (max-width: 768px) {
+      .navBarMenu {
         position: absolute;
         background: #DCDCDC;
         padding: 1.5rem;
         border-radius: 10px;
         top: 5rem;
-        right: 50%;
+        right: -50%;
         width: 80%;
         transform: translateX(50%);
         z-index: 2000;
         box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
-        border: 3px solid rgba(0, 0, 0, 0.42);
+        border: 3px solid #FFF;
         transition: .4s ease-in-out;
 
-        .menu{
+        .menu {
           flex-direction: column;
           gap: .5rem;
           text-align: center;
 
-          .listItem{
+          .listItem {
             padding: .5rem 0;
             cursor: pointer;
             color: #000;
 
-            &:hover{
-              color: #0000FF;
+            &:hover {
+              color: rgba(11, 103, 204, 0.74);
               font-weight: 700;
             }
           }
         }
 
-        .btnOne{
+        .btnOne {
           display: block;
           justify-content: center;
           margin: auto;
           margin-top: 1rem;
         }
       }
-
-      .btnTwo{
+      .btnTwo {
         display: none;
       }
     }
 
-    .toggleIcon{
-      .icon{
+    .toggleIcon {
+      .icon {
         font-size: 30px;
         color: #000;
+      }
+    }
+
+    .showNavBar {
+      right: 50%;
+      transition: .5s ease-in-out;
+    }
+  }
+}
+
+.home {
+  padding-top: 10rem;
+  text-align: center;
+  gap: 2rem;
+  flex-direction: column;
+
+  .mainText {
+    color: #000;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 2.5rem;
+  }
+
+  .homeImages {
+    width: 100%;
+    margin: 1rem auto 0;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    border-radius: 5rem;
+
+    .videoDiv {
+      width: 100%;
+
+      .video {
+        border-radius: 10rem;
+      }
+    }
+
+    .plane {
+      position: absolute;
+      width: 100%;
+      top: -10%;
+    }
+  }
+}
+
+.search{
+  .sectionContainer{
+    width: 100%;
+    padding: 1.5rem;
+    border: 2px solid rgba(71, 77, 82, 0.58);
+    border-radius: 16px;
+    row-gap: 2rem;
+
+    .btns{
+      background: rgba(0, 0, 253, 0.67);;
+      padding: .5rem;
+      border-radius: 1rem;
+      flex-direction: column;
+      width: 100%;
+      margin: auto;
+
+      .singleBtn{
+        padding: .8rem 1.5rem;
+        font-size: 13px;
+        border-radius: 3rem;
+        width: 80%;
+        text-align: center;
+
+        &:hover{
+          background: rgba(232, 253, 0, 0.9);
+          color: #000;
+          font-weight: 500;
+          transition: .4s ease;
+        }
+      }
+
+      .active{
+        background: #000;
+        color: #FFF;
+        font-weight: 500;
+      }
+    }
+
+    .searchInputs{
+      width: 100%;
+      justify-content: center;
+      flex-direction: column;
+      gap: 1.5rem;
+
+      .singleInput{
+        .iconDiv{
+          padding: 16px 10px;
+          border-radius: 3rem;
+          background: rgba(135, 242, 169, 0.42);
+          margin-right: 1rem;
+
+          .icon{
+            color: #000;
+            opacity: .7;
+          }
+        }
+
+        .texts{
+          h4{
+            padding-top: 0;
+            padding-bottom: .7rem;
+            color: #000;
+            font-weight: 700;
+          }
+
+          input{
+            width: 95%;
+            border: none;
+            outline: none;
+            background: transparent;
+            color: #000;
+
+            &::placeholder{
+              font-size: 12px;
+              opacity: .5;
+            }
+          }
+        }
       }
     }
   }

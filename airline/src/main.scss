@@ -393,11 +393,11 @@ h2 {
       justify-content: space-between;
     }
 
-    .cardsDiv{
+    .cardsDiv {
       gap: 1.5rem;
       margin-top: 3rem;
 
-      .singleCard{
+      .singleCard {
         background: #FFF;
         padding: 3rem 2rem;
         border-radius: 10rem;
@@ -408,7 +408,7 @@ h2 {
         width: 90%;
         max-width: 250px;
 
-        .iconDiv{
+        .iconDiv {
           justify-content: center;
           margin: auto;
           background: rgba(19, 187, 49, 0.7);
@@ -417,22 +417,167 @@ h2 {
           padding: 1rem;
           border-radius: 3rem;
 
-          .icon{
+          .icon {
             color: #FFF;
           }
         }
 
-        .cardTitle{
+        .cardTitle {
           color: #000;
           font-weight: 700;
         }
 
-        .colorOne{
+        .colorOne {
           background: rgba(29, 169, 209, 0.71);
         }
 
-        .colorTwo{
+        .colorTwo {
           background: rgba(252, 192, 0, 0.74)
+        }
+      }
+    }
+  }
+}
+
+.lounge {
+  .sectionContainer {
+    background: rgba(191, 203, 193, 0.15);
+    gap: 1.5rem;
+
+    .imgDiv {
+      margin: auto;
+
+      img {
+        width: 100%;
+        max-width: 360px;
+      }
+    }
+
+    .textDiv {
+      .grids {
+        margin-top: 1rem;
+        gap: 1.5rem;
+
+        .singleGrid {
+          .gridTitle {
+            display: block;
+            padding-bottom: .5rem;
+            font-weight: 500;
+            color: #000;
+          }
+
+          .paragraphe {
+            display: block;
+            padding-bottom: .5rem;
+            font-weight: 500;
+            color: #000;
+          }
+        }
+      }
+    }
+  }
+}
+
+.travelers {
+  .sectionContainer {
+    text-align: center;
+
+    .travelersContainer {
+      margin-top: 1rem;
+      gap: 1.5rem;
+
+      .singleTravelers {
+        position: relative;
+        height: 320px;
+        width: 85%;
+        max-width: 250px;
+        overflow: hidden;
+        border-radius: 10rem;
+        gap: 1rem;
+        margin: auto;
+
+        .destinationImg, .travelerImg, .travelerName {
+          position: absolute;
+        }
+
+        .destinationImg {
+          height: 100%;
+          width: 100%;
+          top: 0;
+          right: 0;
+          left: 0;
+          bottom: 0;
+          object-fit: cover;
+        }
+
+        .travelerImg {
+          height: 50px;
+          width: 50px;
+          object-fit: cover;
+          border-radius: 50%;
+          bottom: 30px;
+          left: 40%;
+          transform: translateX(-50%);
+          border: 5px solid #FFF;
+          transition: .4s ease-in-out;
+          animation: animated 2.3s infinite;
+        }
+
+        @keyframes animated {
+          0% {
+            transform: translateY(0px);
+          }
+          50% {
+            transform: translateY(8px);
+          }
+          100% {
+            transform: translateY(0px);
+          }
+        }
+
+        .travelerName {
+          bottom: -100%;
+          width: 100%;
+          height: max-content;
+          background: #FFF;
+          padding: 1.5rem 1rem;
+          transition: .4s ease-in-out;
+          animation: animatedBorders 2.3s infinite;
+
+          span {
+            display: block;
+            color: #000;
+            font-weight: 700;
+          }
+
+          p {
+            color: rgba(36, 34, 35, 0.68);
+            font-size: initial;
+          }
+        }
+
+        @keyframes animatedBorders {
+          0% {
+            border-radius: 0rem;
+          }
+          50% {
+            border-radius: 2rem;
+          }
+          100% {
+            border-radius: 0rem;
+          }
+        }
+
+        &:hover{
+          .travelerName{
+            bottom: 0;
+            transition: 1s ease-in-out;
+          }
+
+          .travelerImg{
+            bottom: 110px;
+            transition: 1s ease-in-out;
+          }
         }
       }
     }

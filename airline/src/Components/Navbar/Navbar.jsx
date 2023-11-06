@@ -1,7 +1,7 @@
 import React, {useState} from "react";
 import {IoIosAirplane} from "react-icons/io";
 import {BsPhoneVibrateFill} from "react-icons/bs";
-import {GrLanguage} from "react-icons/gr";
+import {MdLanguage} from "react-icons/md";
 import {TiThMenuOutline} from "react-icons/ti";
 import logo from '../../assets/logo.png';
 
@@ -35,7 +35,7 @@ const Navbar = () => {
                 </div>
                 <div className="none flex">
                     <li className="flex"><BsPhoneVibrateFill className="icon"/>Support</li>
-                    <li className="flex"><GrLanguage className="icon"/>Support</li>
+                    <li className="flex"><MdLanguage className="icon"/>Support</li>
                 </div>
                 <div className="atb flex">
                     <span>Sign In</span>
@@ -53,7 +53,7 @@ const Navbar = () => {
                         <li onClick={removeNavBar} className="listItem">Offers</li>
                         <li onClick={removeNavBar} className="listItem">Destination</li>
                         <li onClick={removeNavBar} className="listItem">Seats</li>
-                        <li onClick={removeNavBar} className="listItem">About Us</li>
+                        <li onClick={removeNavBar} className="listItem">About</li>
                     </ul>
                     <button onClick={removeNavBar} className="btn flex btnOne">Contact</button>
                 </div>

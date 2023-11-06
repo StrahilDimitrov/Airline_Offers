@@ -1,6 +1,6 @@
 import React from "react";
 import video from '../../assets/sky.mp4';
-import pics from '../../assets/airplanePicture.png';
+import pics from '../../assets/aiplanePicture.png';
 
 const Home = () => {
     return(

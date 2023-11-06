@@ -19,7 +19,6 @@ const Search = () => {
                     </div>
                 </div>
                 <div className="searchInputs flex">
-                    {/*Single Input*/}
                     <div className="singleInput flex">
                         <div className="iconDiv">
                             <HiLocationMarker className="icon"/>
@@ -29,8 +28,6 @@ const Search = () => {
                             <input type="text" placeholder="Wanted Location"/>
                         </div>
                     </div>
-
-                    {/*Single Input*/}
                     <div className="singleInput flex">
                         <div className="iconDiv">
                             <RiAccountPinCircleFill className="icon"/>
@@ -40,8 +37,6 @@ const Search = () => {
                             <input type="text" placeholder="Add guests"/>
                         </div>
                     </div>
-
-                    {/*Single Input*/}
                     <div className="singleInput flex">
                         <div className="iconDiv">
                             <BsFillCalendarEventFill className="icon"/>
@@ -51,7 +46,6 @@ const Search = () => {
                             <input type="text" placeholder="Add date"/>
                         </div>
                     </div>
-                    {/*Single Input*/}
                     <div className="singleInput flex">
                         <div className="iconDiv">
                             <BsFillCalendarEventFill className="icon"/>
@@ -61,8 +55,8 @@ const Search = () => {
                             <input type="text" placeholder="Add date"/>
                         </div>
                     </div>
+                    <button className="btn btnBlock flex">Search Flight</button>
                 </div>
-                <button className="btn btnBlock flex">Search Flight</button>
             </div>
         </div>
     )

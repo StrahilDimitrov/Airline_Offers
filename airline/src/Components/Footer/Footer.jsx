@@ -91,7 +91,7 @@ const Footer = () => {
             </div>
 
             <div className="copyRightDiv flex">
-                <p>Developer by <a href="#">Straho and Kalin</a></p>
+                <p>Developer by <a href="#">IsraTech</a></p>
             </div>
         </div>
     )
